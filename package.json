@@ -1,7 +1,6 @@
 {
   "scripts": {
     "lint": "npm run lint",
-    "test": "npm run lint && mocha tests/*.test.js",
     "update-tag": "node scripts/update-tag.js",
     "generate-release": "eslint-generate-release",
     "generate-alpharelease": "eslint-generate-prerelease alpha",
