@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "eslint:github-action": "eslint src/"
+    "eslint:github-action": "eslint src/",
     "test": "npm run lint",
     "update-tag": "node scripts/update-tag.js",
     "generate-release": "eslint-generate-release",
