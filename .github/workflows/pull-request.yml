@@ -1,7 +1,7 @@
 name: Run ESLint on Pull Requests
 
 on:
-  - pull_request
+  workflow_dispatch:
 
 jobs:
   build:
@@ -21,6 +21,8 @@ jobs:
       - run: npm ci
 
       # Run ESLint using latest action
-      - uses: eslint/github-action@draft
-        env:
-          ESLINT_DRAFT: 1
+      - name: Install ESLint
+        run:  npm install eslint --save-dev 
+
+      - name: Run ESLint
+        run: npm run lint:js
