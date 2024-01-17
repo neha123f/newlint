@@ -1,9 +1,0 @@
-name: 'ESLint GitHub Action'
-description: 'Run ESLint on pull requests'
-inputs:
-  githubToken:
-    description: 'A GitHub token for posting comments on pull requests'
-    required: true
-runs:
-  using: 'node12'
-  main: 'src/github-action.js'
