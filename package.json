@@ -1,5 +1,6 @@
 {
   "scripts": {
+    "lint:js": "eslint src/",
     "lint": "npm run lint",
     "update-tag": "node scripts/update-tag.js",
     "generate-release": "eslint-generate-release",
